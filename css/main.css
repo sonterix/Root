@@ -18,8 +18,8 @@ a{
     grid-area: header;
     height: 500px;
     background-image: url('../img/header.png');
-    background-color: #aaa;
-    background-position: right; 
+    background-color: #bebebe;
+    background-position: 95% center; 
     background-size: contain; 
     background-repeat: no-repeat; 
     display: grid;
@@ -29,7 +29,7 @@ a{
 #nav{
     grid-row: 1;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 6fr 3fr;
 }
 #nav img{
     margin: 10px 50px;
@@ -59,7 +59,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 15%;
+    margin: 0 10%;
     font-family: Arial, Helvetica, sans-serif;
 }
 #header-content h2{
@@ -86,11 +86,33 @@ a{
 }
 
 .content-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
     height: 500px;
-    background-color: tomato;
 }
-#content-1, #content-3, #content-5, #content-7, #content-9, #content-11, #content-13{
-    background-color: #fff;
+.content-inner p, 
+.content-inner h3{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff; 
+}
+.content-inner h3{
+    font-size: 28px;
+    color: #181818
+}
+.content-inner p{
+    margin-bottom: 110px;
+    padding: 35px 5%;
+    font-size: 18px;
+    color: #565656
+}
+#content-1{
+    background-image: url('../img/icon/like.png');
+    background-position: center 20%;
+    background-size: 15%;
+    background-repeat: no-repeat;   
 }
 #content-2{
     background-image: url('../img/man-1.jpg');
@@ -98,11 +120,23 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+#content-3{
+    background-image: url('../img/icon/flash.png');
+    background-position: center 20%;
+    background-size: 15%;
+    background-repeat: no-repeat;   
+}
 #content-4{
     background-image: url('../img/girl-1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+#content-5{
+    background-image: url('../img/icon/idea.png');
+    background-position: center 20%;
+    background-size: 15%;
+    background-repeat: no-repeat;   
 }
 #content-6{
     background-image: url('../img/man-2.jpg');
@@ -110,17 +144,35 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+#content-7{
+    background-image: url('../img/icon/search.png');
+    background-position: center 20%;
+    background-size: 15%;
+    background-repeat: no-repeat;   
+}
 #content-8{
     background-image: url('../img/girl-2.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
+#content-9{
+    background-image: url('../img/icon/network.png');
+    background-position: center 20%;
+    background-size: 15%;
+    background-repeat: no-repeat;   
+}
 #content-10{
     background-image: url('../img/man-3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+#content-11{
+    background-image: url('../img/icon/photo-camera.png');
+    background-position: center 20%;
+    background-size: 15%;
+    background-repeat: no-repeat;   
 }
 #content-12{
     background-image: url('../img/girl-3.jpg');

@@ -30,41 +30,35 @@
             
             <section id="content">
                 <div class="content-inner" id="content-1">
-
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam unde neque necessitatibus odit voluptates explicabo eligendi aperiam doloremque accusantium!</p>
                 </div>
-                <div class="content-inner" id="content-2">
-
-                </div>
+                <div class="content-inner" id="content-2"></div>
                 <div class="content-inner" id="content-3">
-
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam unde neque necessitatibus odit voluptates explicabo eligendi aperiam doloremque accusantium!</p>
                 </div>
-                <div class="content-inner" id="content-4">
-
-                </div>
+                <div class="content-inner" id="content-4"></div>
                 <div class="content-inner" id="content-5">
-
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam unde neque necessitatibus odit voluptates explicabo eligendi aperiam doloremque accusantium!</p>
                 </div>
-                <div class="content-inner" id="content-6">
-
-                </div>
+                <div class="content-inner" id="content-6"></div>
                 <div class="content-inner" id="content-7">
-
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam unde neque necessitatibus odit voluptates explicabo eligendi aperiam doloremque accusantium!</p>
                 </div>
-                <div class="content-inner" id="content-8">
-
-                </div>
+                <div class="content-inner" id="content-8"></div>
                 <div class="content-inner" id="content-9">
-
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam unde neque necessitatibus odit voluptates explicabo eligendi aperiam doloremque accusantium!</p>
                 </div>
-                <div class="content-inner" id="content-10">
-
-                </div>
+                <div class="content-inner" id="content-10"></div>
                 <div class="content-inner" id="content-11">
-
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam unde neque necessitatibus odit voluptates explicabo eligendi aperiam doloremque accusantium!</p>
                 </div>
-                <div class="content-inner" id="content-12">
-
-                </div>
+                <div class="content-inner" id="content-12"></div>
             </section>
         
             <footer id="footer">
