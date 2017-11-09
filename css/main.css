@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
@@ -9,7 +10,9 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 'header'
-                         'content' 
+                         'content'
+                         'about-us'
+                         'contact'
                          'footer';
 }
 
@@ -17,8 +20,7 @@ a{
 #header{
     grid-area: header;
     height: 500px;
-    background-image: url('../img/header.png');
-    background-color: #bebebe;
+    background: url('../img/header.png'), radial-gradient(ellipse at center, #bebebe 0%,#5f5f5f 100%);
     background-position: 95% center; 
     background-size: contain; 
     background-repeat: no-repeat; 
@@ -42,7 +44,6 @@ a{
 }
 #nav ul li{
     padding: 10px 15px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     list-style: none;
@@ -60,7 +61,6 @@ a{
     flex-direction: column;
     justify-content: center;
     margin: 0 10%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #header-content h2{
     margin: 0;
@@ -91,16 +91,16 @@ a{
     justify-content: flex-end;
     text-align: center;
     height: 500px;
+    transition: 0.5s;
 }
 .content-inner p, 
 .content-inner h3{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     color: #fff; 
 }
 .content-inner h3{
     font-size: 28px;
-    color: #181818
+    color: #181818;
 }
 .content-inner p{
     margin-bottom: 110px;
@@ -108,77 +108,149 @@ a{
     font-size: 18px;
     color: #565656
 }
-#content-1{
-    background-image: url('../img/icon/like.png');
+    /* icon */
+#content-1,
+#content-3,
+#content-5,
+#content-7,
+#content-9,
+#content-11,
+#content-13{
     background-position: center 20%;
     background-size: 15%;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+}
+
+    /* pictures */
+#content-2,
+#content-4,
+#content-6,
+#content-8,
+#content-10,
+#content-12{
+    opacity: 0.85;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#content-2::before,
+#content-4::before,
+#content-6::before,
+#content-8::before,
+#content-10::before,
+#content-12::before{
+    content: 'Lorem Ipsum';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 5%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s 0.5s;
+    border-bottom: 30px solid #181818;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: right;
+    text-shadow: 3px 1px 5px #181818;
+}
+#content-2:hover::before,
+#content-4:hover::before,
+#content-6:hover::before,
+#content-8:hover::before,
+#content-10:hover::before,
+#content-12:hover::before,
+#content-2:hover,
+#content-4:hover,
+#content-6:hover,
+#content-8:hover,
+#content-10:hover,
+#content-12:hover{
+    opacity: 0.95;
+}
+#content-1{
+    background-image: url('../img/icon/like.png');  
 }
 #content-2{
     background-image: url('../img/man-1.jpg');
     background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 #content-3{
-    background-image: url('../img/icon/flash.png');
-    background-position: center 20%;
-    background-size: 15%;
-    background-repeat: no-repeat;   
+    background-image: url('../img/icon/flash.png');  
 }
 #content-4{
     background-image: url('../img/girl-1.jpg');
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 #content-5{
-    background-image: url('../img/icon/idea.png');
-    background-position: center 20%;
-    background-size: 15%;
-    background-repeat: no-repeat;   
+    background-image: url('../img/icon/idea.png');  
 }
 #content-6{
     background-image: url('../img/man-2.jpg');
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 #content-7{
-    background-image: url('../img/icon/search.png');
-    background-position: center 20%;
-    background-size: 15%;
-    background-repeat: no-repeat;   
+    background-image: url('../img/icon/search.png');  
 }
 #content-8{
     background-image: url('../img/girl-2.jpg');
     background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 #content-9{
-    background-image: url('../img/icon/network.png');
-    background-position: center 20%;
-    background-size: 15%;
-    background-repeat: no-repeat;   
+    background-image: url('../img/icon/network.png');  
 }
 #content-10{
     background-image: url('../img/man-3.jpg');
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 #content-11{
-    background-image: url('../img/icon/photo-camera.png');
-    background-position: center 20%;
-    background-size: 15%;
-    background-repeat: no-repeat;   
+    background-image: url('../img/icon/photo-camera.png');  
 }
 #content-12{
     background-image: url('../img/girl-3.jpg');
     background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+/* ABOUT US */
+#about-us{
+    grid-area: about-us;
+    color: #fff;
+    background-color: #181818;
+}
+
+/* CONTACT */
+#contact{
+    grid-area: contact;
+    width: 40%;
+    margin: 40px auto;
+}
+#contact h3{
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #181818;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#contact form input{
+    text-align: center;
+    text-align-last: center;
+    padding: 15px 5px;
+    margin: 15px 0;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    color: #181818;
+}
+#contact form input[type=submit]{
+    padding: 20px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #181818;
+    border-color: #181818;
 }
 
 /* FOOTER */
@@ -194,7 +266,6 @@ a{
 #footer p{
     margin: 3px;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 12px;
     letter-spacing: 2px;

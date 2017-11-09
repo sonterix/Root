@@ -17,7 +17,7 @@
                     <img src="img/logo.png" alt="logo">
                     <ul>
                         <a href=""><li>home</li></a>
-                        <a href=""><li>gallery</li></a>
+                        <a href="#content"><li>gallery</li></a>
                         <a href=""><li>about us</li></a>
                         <a href=""><li>contuct</li></a>
                     </ul>
@@ -61,6 +61,20 @@
                 <div class="content-inner" id="content-12"></div>
             </section>
         
+            <secrion id="about-us">
+                about us
+            </secrion>
+
+            <secrion id="contact">
+                <h3>contuct</h3>
+                <form action="" method="post">
+                    <input type="text" placeholder="Enter name">
+                    <input type="email" placeholder="Enter email">
+                    <input type="tel" placeholder="Enter phone number">
+                    <input type="submit" value="GET IT NOW">
+                </form>
+            </secrion>
+
             <footer id="footer">
                 <p>©Nick Burovskiy</p>
                 <p>2017-2018</p>
