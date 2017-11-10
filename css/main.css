@@ -9,11 +9,7 @@ a{
 .wrapper-grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 'header'
-                         'content'
-                         'about-us'
-                         'contact'
-                         'footer';
+    grid-template-areas: 'header' 'content' 'about-us' 'contact' 'footer';
 }
 
 /* HERD */
@@ -53,6 +49,11 @@ a{
 #nav ul li:hover{
     color: #565656;
     border-color: #565656;
+}
+
+#logo:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
 }
 
 #header-content {
@@ -214,8 +215,38 @@ a{
 /* ABOUT US */
 #about-us{
     grid-area: about-us;
+    padding: 40px 0;
+    text-align: center;
+    text-transform: uppercase;
     color: #fff;
     background-color: #181818;
+}
+#about-us h3{
+    margin: 40px 0;
+    font-size: 36px;
+}
+
+#about-us-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.about-us-container{
+    width: 15%;
+    transition: 0.5s;
+}
+.about-us-container:hover{
+    color: #ff6347;
+    transform: scale(0.95);
+}
+.about-us-container span{
+    font-size: 80px;
+}
+.about-us-container p{
+    font-size: 22px;
+
 }
 
 /* CONTACT */
@@ -225,10 +256,11 @@ a{
     margin: 40px auto;
 }
 #contact h3{
+    margin: 40px 0;
     font-size: 38px;
     text-transform: uppercase;
     text-align: center;
-    color: tomato;
+    color: #181818;
 }
 #contact form{
     display: flex;
@@ -240,6 +272,7 @@ a{
     margin: 15px 0;
     outline: none;
     font-weight: 400;
+    font-size: 16px;
     text-align: center;
     text-align-last: center;
     border-radius: 5px;
@@ -256,6 +289,7 @@ a{
     color: tomato;
 }
 #contact form input[type=submit]{
+    margin: 20px 0 40px 0;
     padding: 20px 0;
     color: #fff;
     font-weight: 600;
@@ -268,6 +302,10 @@ a{
     border-color: tomato;
 }
 
+.blink-input{
+    background-color: #ffb8af;
+}
+
 /* FOOTER */
 #footer{
     grid-area: footer;
@@ -275,7 +313,8 @@ a{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
+    padding: 8px;
+    height: 120px;
     background-color: #181818;
 }
 #footer p{

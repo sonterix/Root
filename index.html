@@ -8,13 +8,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 
     <div class="wrapper-grid">
             <header id="header">
                 <nav id="nav">
-                    <a href="/"><img src="img/logo.png" alt="logo"></a>
+                    <a href="/"><img src="img/logo.png" alt="logo" id="logo"></a>
                     <ul>
                         <a href="#header"><li>home</li></a>
                         <a href="#content"><li>gallery</li></a>
@@ -62,15 +63,33 @@
             </section>
         
             <secrion id="about-us">
-                about us
+                <h3>about us</h3>
+                <div id="about-us-wrapper">
+                    <div class="about-us-container">
+                        <span class="fa fa-user"></span>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="about-us-container">
+                        <span class="fa fa-cloud"></span>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="about-us-container">
+                        <span class="fa fa-thumbs-up"></span>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="about-us-container">
+                        <span class="fa fa-coffee"></span>
+                        <p>Lorem ipsum</p>  
+                    </div>
+                </div>
             </secrion>
 
             <secrion id="contact">
                 <h3>contuct</h3>
                 <form action="" method="post">
-                    <input type="text" placeholder="Enter name">
-                    <input type="email" placeholder="Enter email">
-                    <input type="tel" placeholder="Enter phone number">
+                    <input type="text" name="Data[name]" placeholder="Enter name">
+                    <input type="email" name="Data[email]" placeholder="Enter email">
+                    <input type="tel" name="Data[phone]" placeholder="Enter phone number">
                     <input type="submit" value="GET IT NOW">
                 </form>
             </secrion>
@@ -82,6 +101,7 @@
     </div>
     
     <!-- JS -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
