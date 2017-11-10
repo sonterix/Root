@@ -228,7 +228,7 @@ a{
     font-size: 38px;
     text-transform: uppercase;
     text-align: center;
-    color: #181818;
+    color: tomato;
 }
 #contact form{
     display: flex;
@@ -236,13 +236,24 @@ a{
     width: 100%;
 }
 #contact form input{
-    text-align: center;
-    text-align-last: center;
     padding: 15px 5px;
     margin: 15px 0;
-    border: 2px solid tomato;
+    outline: none;
+    font-weight: 400;
+    text-align: center;
+    text-align-last: center;
     border-radius: 5px;
+    border: 1px solid #181818;
     color: #181818;
+    transition: 0.5s;
+}
+#contact form input::selection{
+    color: #fff;
+    background: #181818;
+}
+#contact form input:focus{
+    border: 1px solid tomato;
+    color: tomato;
 }
 #contact form input[type=submit]{
     padding: 20px 0;
@@ -251,6 +262,10 @@ a{
     font-size: 18px;
     background-color: #181818;
     border-color: #181818;
+}
+#contact form input[type=submit]:hover{
+    background-color: tomato;
+    border-color: tomato;
 }
 
 /* FOOTER */
@@ -266,7 +281,7 @@ a{
 #footer p{
     margin: 3px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 100;
     font-size: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }

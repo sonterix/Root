@@ -14,12 +14,12 @@
     <div class="wrapper-grid">
             <header id="header">
                 <nav id="nav">
-                    <img src="img/logo.png" alt="logo">
+                    <a href="/"><img src="img/logo.png" alt="logo"></a>
                     <ul>
-                        <a href=""><li>home</li></a>
+                        <a href="#header"><li>home</li></a>
                         <a href="#content"><li>gallery</li></a>
-                        <a href=""><li>about us</li></a>
-                        <a href=""><li>contuct</li></a>
+                        <a href="#about-us"><li>about us</li></a>
+                        <a href="#contact"><li>contact</li></a>
                     </ul>
                 </nav>
                 <div id="header-content">
