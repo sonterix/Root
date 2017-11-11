@@ -50,5 +50,21 @@
         return false;
     });
 
+    //animate
+    $(document).scroll(function () {
+        var screenHeight = $(window).height(),
+        screen = $(window).scrollTop(),
+        aboutUs = $("#about-us-wrapper").offset().top-screenHeight,
+        contact = $("#contact form").offset().top-screenHeight;
+
+        if(screen >= aboutUs){
+            $(".about-us-container").addClass('animated bounceIn');
+        }
+        
+        if(screen >= contact){
+            $("#contact input:eq(0), #contact input:eq(2)").addClass('animated slideInRight');
+            $("#contact input:eq(1), #contact input:eq(3)").addClass('animated slideInLeft');
+        }
+    });
 
 })(jQuery);
