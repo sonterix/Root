@@ -25,32 +25,6 @@ a{
     grid-template: 100px 1fr / 1fr;
 }
 
-#nav{
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr 6fr 3fr;
-}
-#nav img{
-    margin: 10px 50px;
-    width: 100px;
-    opacity: 0.9;
-}
-#nav ul{
-    display: flex;
-    align-items: center;
-}
-#nav ul li{
-    padding: 10px 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    list-style: none;
-    color: #fff;
-    border: 2px solid transparent;
-}
-#nav ul li:hover{
-    color: #565656;
-    border-color: #565656;
-}
 
 #logo:hover{
     transition: 0.5s;
@@ -77,6 +51,34 @@ a{
     font-size: 18px;
     text-transform: lowercase;
     color: #565656;
+}
+
+#nav{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+#nav img{
+    margin: 10px 50px;
+    width: 100px;
+    opacity: 0.9;
+}
+#nav ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+#nav ul li{
+    padding: 10px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    list-style: none;
+    color: #fff;
+    border: 2px solid transparent;
+}
+#nav ul li:hover{
+    color: #565656;
+    border-color: #565656;
 }
 
 
@@ -182,7 +184,7 @@ a{
 }
 #content-4{
     background-image: url('../img/girl-1.jpg');
-    background-position: center;
+    background-position: 20%;
 }
 #content-5{
     background-image: url('../img/icon/idea.png');  
