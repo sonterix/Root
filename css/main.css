@@ -7,7 +7,7 @@ a{
     text-decoration: none;
 }
 .wrapper-grid{
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     grid-template-areas: 'header' 'content' 'about-us' 'contact' 'footer';
 }

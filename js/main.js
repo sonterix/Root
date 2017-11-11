@@ -1,5 +1,11 @@
 (function($){
 
+    //preloder
+    setTimeout(function(){
+        $('#loading').fadeOut(600);
+        $('.wrapper-grid').css('display', 'grid');
+    }, 1500);
+
     //animate scroll
     $('body').on('click', 'a[href^="#"]', function() {
         var clicked = $(this).attr("href"),

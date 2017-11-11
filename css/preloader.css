@@ -1,0 +1,56 @@
+#loading{
+    background: radial-gradient(ellipse at center, #505050 0%, #181818 100%);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+}
+
+#loading-center{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#object{
+    width: 130px;
+    height: 130px;
+    background: url('../img/favicon.png'), #FFF;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: animate 4s infinite ease-in-out;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+
+@keyframes animate {
+    0% { 
+        transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    } 
+    25% { 
+        transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+    } 
+    50% { 
+        transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+    }
+    75% { 
+        transform: perspective(160px) rotateX(0deg) rotateY(-180deg);
+    }
+    100% { 
+        transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    }
+}
