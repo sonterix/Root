@@ -46,11 +46,21 @@
 }
 
 @media screen and (max-width: 800px){
+    
+    /* HEADER */
+    #nav ul{
+        display: none;
+    }
+
+    #nav-hamburger{
+        display: flex;
+    }
 
     /* ABOUT US */
     #about-us-wrapper{
         flex-direction: column;
     }
+    
     .about-us-container{
         width: 100%;
         padding-bottom: 20px;
@@ -58,6 +68,38 @@
 
     /* CONTUCT */
     #contact{
-        width: 80%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    /* CONTENT */
+    #content{
+        grid-template-columns: 1fr;
+    }
+
+    #content-1,
+    #content-2,
+    #content-3,
+    #content-4,
+    #content-5,
+    #content-6,
+    #content-7,
+    #content-8,
+    #content-9,
+    #content-10,
+    #content-11,
+    #content-12,
+    #content-13{
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .content-inner{
+        height: 380px;
+    }
+    .content-inner p{
+        margin-bottom: 40px;
     }
 }

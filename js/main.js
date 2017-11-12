@@ -18,6 +18,19 @@
         return false;
     });
 
+    //hamburger menu
+    $('#nav-hamburger').on('click', function(){
+        $(this).toggleClass('hamburger-menu-fixed');
+        $(this).children().toggleClass('hamburger-menu-active');
+        $('#nav ul').toggleClass('open-menu');
+    });
+
+    $('#nav ul').on('click', function(){
+        $('#nav-hamburger').toggleClass('hamburger-menu-fixed');
+        $('#nav-hamburger').children().toggleClass('hamburger-menu-active');
+        $('#nav ul').toggleClass('open-menu');
+    });
+
     // form submit
     $('#contact form').submit(function () {
         var name = $.trim($('input[name="Data[name]"]', this).val()),
@@ -58,12 +71,11 @@
         contact = $("#contact form").offset().top-screenHeight;
 
         if(screen >= aboutUs){
-            $(".about-us-container").addClass('animated bounceIn');
+            $(".about-us-container").addClass('animated slideInUp');
         }
         
         if(screen >= contact){
-            $("#contact input:eq(0), #contact input:eq(2)").addClass('animated slideInRight');
-            $("#contact input:eq(1), #contact input:eq(3)").addClass('animated slideInLeft');
+            $("#contact input").addClass('animated pulse');
         }
     });
 
